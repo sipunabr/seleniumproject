@@ -32,7 +32,7 @@ public class Sample_Selenium_Test {
         try {
             webdriver = new ChromeDriver(chromeOptions);
             webdriver.get("https://web.whatsapp.com/");
-            Assert.assertFalse(webdriver.getTitle().equals("WhatsApp Web"),"Pass");
+            Assert.assertTrue(webdriver.getTitle().equals("WhatsApp Web"),"Pass");
             System.out.println("Pass");
 
         }catch(Exception e){
